@@ -8,7 +8,7 @@ CodeBuddy 项目记忆。只写高频硬约束和入口，详细规则以仓库�
 
 - 正文只维护 `book/` 一套，不要另建副本。
 - 阅读顺序只由 `book/SUMMARY.md` 决定；根目录 `SUMMARY.md` 是面向 GitHub 的镜像，两者必须同步。
-- 当前进度与待办见 `项目进度_V5_2026-11-01.md`。
+- 当前进度与待办见 `项目进度_V6_2026-11-01.md`。
 
 ## 常用命令
 
@@ -43,9 +43,9 @@ python scripts/check_epub.py       # EPUBCheck 5.3.0（需 Java）
 
 ## 文件命名
 
-自定义文档用 `主题_V版本号_创建日期`（如 `构建与发布_V3_2026-11-01.md`）；README、SUMMARY、CONTRIBUTING、LICENSE、CODEBUDDY 用约定名。
+自定义文档用 `主题_V版本号_创建日期`（如 `构建与发布_V4_2026-11-01.md`）；README、SUMMARY、CONTRIBUTING、LICENSE、CODEBUDDY 用约定名。
 同一对话内每修改一次自定义文档，版本号 +1，并同步所有引用它的链接（README、项目进度等）。
 
 ## 构建与发布
 
-详见 `构建与发布_V3_2026-11-01.md`。远端仓库尚未连接，Pages 与 Release 都还没实际发布过。
+详见 `构建与发布_V4_2026-11-01.md`。仓库 `RanchoGao/pm-communication-handbook` 已公开，Push main 自动部署站点；Release 尚未打标签。
