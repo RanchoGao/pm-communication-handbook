@@ -4,16 +4,16 @@
 
 面向产品经理的沟通场景手册，覆盖需求澄清、汇报、跨部门推进、关系维护、反馈和 24 个麻烦现场。
 
-**维护者：EurekaGao · 当前状态：分章电子书，准备首次发布。**
+**维护者：EurekaGao · 当前状态：已发布 v1.0.0 预发布版，内容审阅进行中。**
 
 ## 开始阅读
 
 - [从阅读指南开始](book/00_阅读指南_V1_2026-11-01.md)
 - [完整章节目录](SUMMARY.md)
 - [书籍首页](book/README.md)
-- [下载与离线阅读](下载与阅读_V4_2026-11-01.md)
+- [下载与离线阅读](下载与阅读_V5_2026-11-01.md)
 
-在线阅读：https://ranchogao.github.io/pm-communication-handbook/ ，带目录、搜索和章节切换。EPUB 与 PDF 的公开下载尚未发布，发布首个版本后可从 Releases 获取。
+在线阅读：https://ranchogao.github.io/pm-communication-handbook/ ，带目录、搜索和章节切换。EPUB 与 PDF 可在 [Releases](https://github.com/RanchoGao/pm-communication-handbook/releases) 下载，当前 v1.0.0 标记为预发布。
 
 ## 阅读方式
 
@@ -32,9 +32,9 @@
 
 - [贡献指南](CONTRIBUTING.md)
 - [编辑规范](编辑规范_V3_2026-11-01.md)
-- [项目进度](项目进度_V6_2026-11-01.md)
+- [项目进度](项目进度_V7_2026-11-01.md)
 - [来源记录](来源记录_V3_2026-11-01.md)
-- [构建与发布](构建与发布_V4_2026-11-01.md)
+- [构建与发布](构建与发布_V5_2026-11-01.md)
 
 正文只维护 `book/` 中的一套章节，`book/SUMMARY.md` 决定网站和电子书的阅读顺序。
 
