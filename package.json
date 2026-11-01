@@ -1,0 +1,15 @@
+{
+  "name": "pm-communication-handbook",
+  "private": true,
+  "version": "1.0.0",
+  "author": "EurekaGao",
+  "scripts": {
+    "check": "python scripts/build.py check",
+    "build": "python scripts/build.py all",
+    "books": "python scripts/build.py ebooks"
+  },
+  "devDependencies": {
+    "mermaid": "12.2.0",
+    "playwright": "1.61.1"
+  }
+}

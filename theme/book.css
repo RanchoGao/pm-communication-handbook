@@ -1,0 +1,10 @@
+:root { --content-max-width: 860px; }
+.content { font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; line-height: 1.85; }
+.content h1, .content h2, .content h3 { line-height: 1.45; }
+.content table { display: block; overflow-x: auto; font-size: .92em; }
+.content pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.content .mermaid { text-align: center; overflow-x: auto; }
+.content a { text-underline-offset: .2em; }
+.download-panel { border: 1px solid #9bbeb8; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+.download-panel p { margin-bottom: 0; }
+@media (max-width: 600px) { .content { padding: 0 16px; } }

@@ -1,0 +1,23 @@
+[book]
+title = "产品经理沟通手册"
+authors = ["EurekaGao"]
+language = "zh-CN"
+src = "book"
+
+[build]
+build-dir = "site"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+smart-punctuation = false
+additional-css = ["theme/book.css"]
+additional-js = ["theme/mermaid.min.js", "theme/mermaid-init.js", "theme/search-zh.js"]
+no-section-label = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+use-boolean-and = true
+

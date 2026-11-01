@@ -1,0 +1,10 @@
+body { font-family: "Noto Serif CJK SC", "Microsoft YaHei", serif; line-height: 1.75; }
+h1,h2,h3,h4 { line-height: 1.4; }
+h1 { break-before: page; }
+table { border-collapse: collapse; width: 100%; font-size: .85em; }
+td,th { border: 1px solid #b8c5cb; padding: .45em; overflow-wrap: anywhere; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #f2f5f6; padding: .8em; font-size: .85em; }
+code { font-family: monospace; }
+img { max-width: 100%; height: auto; }
+blockquote { border-left: .2em solid #188579; margin-left: 0; padding-left: 1em; color: #45565e; }
+a { color: #146e77; }

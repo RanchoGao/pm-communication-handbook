@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>$title$</title>
+$for(css)$<link rel="stylesheet" href="$css$">$endfor$
+</head>
+<body>
+$for(include-before)$$include-before$$endfor$
+$if(toc)$<nav id="TOC" role="doc-toc"><h2>目录</h2>$table-of-contents$</nav>$endif$
+<main>$body$</main>
+</body></html>

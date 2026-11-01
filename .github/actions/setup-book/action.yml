@@ -1,0 +1,20 @@
+name: Book build dependencies
+description: Install pinned mdBook, Pandoc and browser tools
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+        cache: npm
+    - run: npm ci --ignore-scripts --no-audit --no-fund
+      shell: bash
+    - run: python scripts/setup_tools.py
+      shell: bash
+    - run: npx --no-install playwright install --with-deps chromium
+      shell: bash
+    - run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk fonts-noto-color-emoji
+      shell: bash

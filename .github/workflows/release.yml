@@ -1,0 +1,34 @@
+name: Publish EPUB and PDF
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-book
+      - name: Build ebooks
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          python scripts/build.py ebooks --version "V${TAG#v}" --date "$(date -u +%F)"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: python scripts/check_epub.py
+      - name: Publish release files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" dist/*.epub dist/*.pdf dist/SHA256SUMS.txt --clobber
+          else
+            gh release create "$TAG" dist/*.epub dist/*.pdf dist/SHA256SUMS.txt --verify-tag --title "产品经理沟通手册 $TAG" --notes-file .github/release-notes.md
+          fi
