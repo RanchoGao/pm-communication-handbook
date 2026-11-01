@@ -195,7 +195,8 @@ def ebooks(version, publication_date):
     cover = prepare_assets()
     merged = export_source()
     DIST.mkdir(exist_ok=True)
-    stem = f'产品经理沟通手册_{version}_{publication_date}'
+    slug = os.environ.get('BOOK_SLUG', '产品经理沟通手册')
+    stem = f'{slug}_{version}_{publication_date}'
     epub = DIST/(stem+'.epub')
     pdf = DIST/(stem+'.pdf')
     common = [binary('pandoc'), merged, '--from=markdown+raw_html+header_attributes', '--standalone', '--toc', '--toc-depth=3', '--resource-path='+str(BUILD), '-M', 'title=产品经理沟通手册', '-M', 'author=EurekaGao', '-M', 'lang=zh-CN', '-M', 'date='+publication_date]

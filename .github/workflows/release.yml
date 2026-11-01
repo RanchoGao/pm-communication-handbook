@@ -15,6 +15,7 @@ jobs:
       - name: Build ebooks
         env:
           TAG: ${{ github.ref_name }}
+          BOOK_SLUG: pm-communication-handbook
         run: |
           python scripts/build.py ebooks --version "V${TAG#v}" --date "$(date -u +%F)"
       - uses: actions/setup-java@v4
